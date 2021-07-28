@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "aquatic:aquamarine_block"
+    }
+  ],
+  "result": {
+    "item": "aquatic:aquamarine",
+    "count": 9
+  }
+}
