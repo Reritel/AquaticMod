@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "aquatic",
+  "version": "${version}",
+  "name": "AquaticMod",
+  "description": "Aquatic mod",
+  "authors": [
+    "Reritel",
+    "Arthalion"
+  ],
+  "contributors": [],
+  "contact": {},
+  "license": "Apache-2.0",
+  "icon": "assets/aquatic/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.reritel.acuatic.main"
+    ],
+    "client": [],
+    "server": []
+  },
+  "mixins": [
+    "aquatic.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.6",
+    "fabric": "*"
+  }
+}
