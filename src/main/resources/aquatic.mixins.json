@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "com.reritel.acuatic.mixin",
+  "package": "com.reritel.aquatic.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [],
   "client": [],

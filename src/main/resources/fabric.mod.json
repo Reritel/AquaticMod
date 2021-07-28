@@ -15,7 +15,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.reritel.acuatic.main"
+      "com.reritel.aquatic.main"
     ],
     "client": [],
     "server": []
