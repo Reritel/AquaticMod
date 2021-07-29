@@ -2,6 +2,7 @@ package com.reritel.aquatic;
 
 import com.reritel.aquatic.registry.ModBlocks;
 import com.reritel.aquatic.registry.ModItems;
+import com.reritel.aquatic.registry.ModOreGeneration;
 import com.reritel.aquatic.registry.ModOres;
 import net.fabricmc.api.ModInitializer;
 
@@ -31,6 +32,7 @@ public class Main implements ModInitializer {
         ModItems.RegisterItems();
         ModBlocks.RegisterBlocks();
         ModOres.RegisterOres();
+        ModOreGeneration.RegisterOreGeneration();
     }
 
     public static void log(Level level, String message){
