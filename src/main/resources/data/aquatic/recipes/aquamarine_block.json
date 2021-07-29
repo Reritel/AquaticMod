@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "aquatic:aquamarine"
+    }
+  },
+  "result": {
+    "item": "aquatic:aquamarine_block",
+    "count": 1
+  }
+}
