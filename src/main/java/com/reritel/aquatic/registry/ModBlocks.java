@@ -19,5 +19,6 @@ public class ModBlocks {
 
     public static void RegisterBlocks() {
         Registry.register(Registry.BLOCK, new Identifier(Main.MOD_ID, "aquamarine_block"), AQUAMARINE_BLOCK);
+        ModItems.GenerateBlockItem("aquamarine_block", AQUAMARINE_BLOCK);
     }
 }
