@@ -12,9 +12,9 @@ import net.minecraft.util.registry.Registry;
 public class ModOres {
     static public final FallingBlock AQUAMARINE_ORE = new FallingBlock(FabricBlockSettings
             .of(Material.SOIL)
-            .breakByTool(FabricToolTags.PICKAXES, 2)
+            .breakByTool(FabricToolTags.SHOVELS, 0)
             .requiresTool()
-            .strength(3f, 3f)
+            .strength(0.6f, 0.6f)
             .sounds(BlockSoundGroup.GRAVEL));
 
     public static void RegisterOres() {
