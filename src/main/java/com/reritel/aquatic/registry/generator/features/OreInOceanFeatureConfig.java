@@ -2,15 +2,15 @@ package com.reritel.aquatic.registry.generator.features;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.util.math.intprovider.IntProvider;
-import net.minecraft.world.gen.feature.FeatureConfig;
-import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.util.valueproviders.IntProvider;
+import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
+import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 
 
-public class OreInOceanFeatureConfig implements FeatureConfig {
+public class OreInOceanFeatureConfig implements FeatureConfiguration {
     public static final Codec<OreInOceanFeatureConfig> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            BlockStateProvider.TYPE_CODEC.fieldOf("block").forGetter((config) -> config.block),
-            IntProvider.VALUE_CODEC.fieldOf("maxVein").forGetter((config) -> config.maxVein)
+            BlockStateProvider.CODEC.fieldOf("block").forGetter((config) -> config.block),
+            IntProvider.CODEC.fieldOf("maxVein").forGetter((config) -> config.maxVein)
     ).apply(instance, instance.stable(OreInOceanFeatureConfig::new)));
 
     private final BlockStateProvider block;
