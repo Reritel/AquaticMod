@@ -11,6 +11,6 @@ public class MainClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-//        AquaticKeybinds.initialize();
+        AquaticKeybinds.initialize();
     }
 }
