@@ -16,6 +16,9 @@
   "entrypoints": {
     "main": [
       "com.reritel.aquatic.Main"
+    ],
+    "client": [
+      "com.reritel.aquatic.MainClient"
     ]
   },
   "mixins": [
