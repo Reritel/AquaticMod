@@ -18,11 +18,9 @@ public class OreInOceanFeature extends Feature<OreInOceanFeatureConfig> {
 
     @Override
     public boolean generate(FeatureContext<OreInOceanFeatureConfig> context) {
-        int i = 0;
         BlockPos topPos = context.getWorld().getTopPosition(Heightmap.Type.OCEAN_FLOOR, context.getOrigin()).down();
 
         OreInOceanFeatureConfig config = context.getConfig();
-        boolean gravel = context.getWorld().getBlockState(topPos.down()).isOf(Blocks.GRAVEL);
         if (context.getWorld().getBlockState(topPos).isOf(Blocks.GRAVEL)) {
             BlockState block = config.getBlock().getBlockState(context.getRandom(), topPos);
             int maxVein = config.getMaxVein().get(context.getRandom());
@@ -30,12 +28,12 @@ public class OreInOceanFeature extends Feature<OreInOceanFeatureConfig> {
                 Main.log(Level.WARN, "Generated ore " + context.getOrigin().toString() + " max vein " + maxVein);
                 context.getWorld().setBlockState(topPos, block, 2);
 
-                ++i;
+                return true;
             }
 
         }
 
-        return i > 0;
+        return false;
     }
 
 }

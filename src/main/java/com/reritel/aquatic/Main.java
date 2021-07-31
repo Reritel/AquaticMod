@@ -23,7 +23,7 @@ public class Main implements ModInitializer {
 
     public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(
             new Identifier(MOD_ID, "general"),
-            () -> new ItemStack(ModItems.AQUAMARINE));
+            () -> new ItemStack(ModItems.DIVING_SUIT_HELMET));
 
     @Override
     public void onInitialize() {
