@@ -7,10 +7,10 @@ import shadow.fabric.api.client.rendering.v1.ArmorRenderingRegistry;
 @Environment(EnvType.CLIENT)
 public class ModModelProvider {
 
-    public static final ModArmorProvider DIVING_SUIT_HELMET = new ModArmorProvider();
+    public static final ModArmorProvider DIVING_SUIT = new ModArmorProvider();
 
     public static final void register () {
-        ArmorRenderingRegistry.registerModel(DIVING_SUIT_HELMET, DIVING_SUIT_HELMET.getRenderedItems());
-        ArmorRenderingRegistry.registerTexture(DIVING_SUIT_HELMET, DIVING_SUIT_HELMET.getRenderedItems());
+        ArmorRenderingRegistry.registerModel(DIVING_SUIT, DIVING_SUIT.getRenderedItems());
+        ArmorRenderingRegistry.registerTexture(DIVING_SUIT, DIVING_SUIT.getRenderedItems());
     }
 }

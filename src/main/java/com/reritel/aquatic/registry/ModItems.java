@@ -1,7 +1,10 @@
 package com.reritel.aquatic.registry;
 
 import com.reritel.aquatic.Main;
+import com.reritel.aquatic.registry.armor.item.DivingSuitBoots;
+import com.reritel.aquatic.registry.armor.item.DivingSuitChestplate;
 import com.reritel.aquatic.registry.armor.item.DivingSuitHelmet;
+import com.reritel.aquatic.registry.armor.item.DivingSuitLeggings;
 import com.reritel.aquatic.tab.CreativeTabs;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.resources.ResourceLocation;
@@ -48,6 +51,9 @@ public class ModItems extends ItemsRegistry {
 
     //Armor
     public static final Item DIVING_SUIT_HELMET = registerModItem("diving_suit_helmet", new DivingSuitHelmet());
+    public static final Item DIVING_SUIT_CHESTPLATE = registerModItem("diving_suit_chestplate", new DivingSuitChestplate());
+    public static final Item DIVING_SUIT_LEGGINGS = registerModItem("diving_suit_leggings", new DivingSuitLeggings());
+    public static final Item DIVING_SUIT_BOOTS = registerModItem("diving_suit_boots", new DivingSuitBoots());
 
 
 

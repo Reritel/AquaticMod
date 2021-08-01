@@ -30,8 +30,6 @@ public class DivingHelmetModel extends HumanoidModel<LivingEntity> {
 		MeshDefinition modelData = new MeshDefinition();
 		PartDefinition modelPartData = modelData.getRoot();
 
-//		modelPartData.addOrReplaceChild("", CubeListBuilder.create().addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F), PartPose.ZERO);
-
 		CubeListBuilder hat = CubeListBuilder.create().texOffs(0, 112).addBox( -4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F);
 		hat.texOffs(0, 112).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F);
 		hat.texOffs(32, 121).addBox(-3.0F, -7.0F, 4.0F, 6.0F, 6.0F, 1.0F);
