@@ -22,7 +22,8 @@
     ]
   },
   "mixins": [
-    "aquatic.mixins.json"
+    "aquatic.mixins.json",
+    "aquatic.mixins.shadow.json"
   ],
   "depends": {
     "fabricloader": ">=0.11.6",

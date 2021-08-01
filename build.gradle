@@ -3,8 +3,8 @@ plugins {
 	id 'maven-publish'
 }
 
-sourceCompatibility = JavaVersion.VERSION_1_8
-targetCompatibility = JavaVersion.VERSION_1_8
+sourceCompatibility = JavaVersion.VERSION_16
+targetCompatibility = JavaVersion.VERSION_16
 
 archivesBaseName = project.archives_base_name
 version = project.mod_version
@@ -19,6 +19,11 @@ repositories {
 		name = "CottonMC"
 		url = "https://server.bbkr.space/artifactory/libs-release"
 	}
+	maven { url "https://maven.dblsaiko.net/" }
+	maven { url "https://maven.fabricmc.net/" }
+	maven { url 'https://maven.blamejared.com' }
+	maven { url "https://maven.shedaniel.me/" }
+	maven { url 'https://jitpack.io' }
 }
 
 dependencies {
@@ -30,8 +35,21 @@ dependencies {
 
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
+	useApi "com.github.paulevsGitch:BCLib:${project.bclib_version}"
 	//for work with gui (LibGUI)
 	modImplementation include("io.github.cottonmc:LibGui:4.1.5+1.17.1")
+}
+
+
+def useApi(String dep) {
+	dependencies.modApi(dep) {
+		exclude group: 'net.fabricmc.fabric-api'
+		exclude group: 'net.fabricmc'
+		if (!dep.contains("me.shedaniel")) {
+			exclude group: 'me.shedaniel.cloth'
+			exclude group: 'me.shedaniel'
+		}
+	}
 }
 
 processResources {
