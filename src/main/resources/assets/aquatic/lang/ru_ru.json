@@ -2,7 +2,10 @@
   "itemGroup.aquatic.general": "Aquatic",
   "item.aquatic.aquamarine": "Аквамарин",
   "item.aquatic.diving_suit_helmet": "Шлем водолазного костюма",
-  "item.aquatic.oxygen_cylinder": "Кислородный баллон",
+  "item.aquatic.hand_pump": "Ручной насос",
+  "item.aquatic.oxygen_cylinder_tier1": "Кислородный баллон (уровень 1)",
+  "item.aquatic.oxygen_cylinder_tier2": "Кислородный баллон (уровень 2)",
+  "item.aquatic.oxygen_cylinder_tier3": "Кислородный баллон (уровень 3)",
   "block.aquatic.aquamarine_block": "Блок аквамарина",
   "block.aquatic.aquamarine_ore": "Руда аквамарина"
 

@@ -2,7 +2,10 @@
   "itemGroup.aquatic.general": "Aquatic",
   "item.aquatic.aquamarine": "Aquamarine",
   "item.aquatic.diving_suit_helmet": "Diving suit helmet",
-  "item.aquatic.oxygen_cylinder": "Oxygen Cylinder",
+  "item.aquatic.hand_pump": "Hand Pump",
+  "item.aquatic.oxygen_cylinder_tier1": "Oxygen Cylinder (tier1)",
+  "item.aquatic.oxygen_cylinder_tier2": "Oxygen Cylinder (tier2)",
+  "item.aquatic.oxygen_cylinder_tier3": "Oxygen Cylinder (tier3)",
   "block.aquatic.aquamarine_block": "Aquamarine block",
   "block.aquatic.aquamarine_ore": "Aquamarine ore"
 }
